@@ -1,0 +1,12 @@
+.subtitle {
+  font-size: 2rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #F18F01;
+    margin: 10px 0;
+  }
+}

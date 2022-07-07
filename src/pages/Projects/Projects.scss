@@ -1,0 +1,81 @@
+.section-projects {
+  padding: 0 100px;
+  margin: 100px 0;
+  @media (min-width: 320px) and (max-width: 876px) {
+    padding: 0 30px;
+  }
+
+  & > p {
+    font-size: 1.25rem;
+    max-width: 1100px;
+    line-height: 1.5;
+  }
+
+  .project-list {
+    li {
+      position: relative;
+      margin: 50px 0 50px 30px;
+
+      & > h1 {
+        font-size: 1.5rem;
+      }
+
+      & > .line {
+        width: 10px;
+        background: #f18f01;
+        border: 1px solid #f18f01;
+        position: absolute;
+        top: 3px;
+        left: -18px;
+      }
+
+      & > span {
+        font-style: italic;
+        font-size: 1.2rem;
+        display: inline-block;
+        margin: 10px 0;
+      }
+
+      & > p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .challenger-list {
+    display: inline-flex;
+    // gap: 20px;
+    // justify-content: center;
+    // align-items: center;
+
+    @media (min-width: 320px) and (max-width: 876px) {
+      flex-direction: column;
+    }
+
+    li {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 50px 0;
+      img {
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        color: #f18f01;
+        font-weight: 600;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 1.2rem;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}
